@@ -118,6 +118,10 @@ public abstract class AbstractOpenApiBuilder {
                 }
             }
         }
+
+
+
+        
         for (Map.Entry<String, TagDoc> docEntry : DocMapping.TAG_DOC.entrySet()) {
             String tag = docEntry.getKey();
             tags.addAll(docEntry.getValue().getClazzDocs()
